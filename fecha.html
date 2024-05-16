@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script> 
+    <script src="js/functions.js" defer></script>
+    <link rel="stylesheet" href="css/estilos.css"> <!--Importar estilos de otro archivo--> 
+    <script src="https://kit.fontawesome.com/165547e65c.js" crossorigin="anonymous"></script> <!--Importando Iconos-->
+    <title>Agendar Servicio</title>
+</head>
+<body background="pics/bkgd.png">
+    <header>
+        <!--Header/Cabecera-->
+        <!--Video Contexto: https://www.youtube.com/watch?v=OuoLQiXPitk-->
+        <div class ="logo"> 
+            <img src="pics/logo.png" alt="logo de la pagina">
+            <h2 class="nombre-empresa">Dog Lover</h2>
+        </div>    
+        <nav>
+            <ul>
+            <li><a href="agendar.html" class="nav-link"> > Volver</a></li>    
+            </ul>
+            </nav>
+    </header>
+        <div class="calendar_box">
+            <div class = "cal_con">
+                <div class = "fila">
+                    <div class=" cld_itm">
+                        <div class="container_calendar">
+                            <div class="header_calendar">
+                                <h1 id="text_day">00</h1>
+                                <h5 id="text_month">Null</h5>
+                            </div>
+                            <div class="body_calendar">
+                                <div class="container_details">
+                                    <div class="detail_1">
+                                        <div class="detail">
+                                            <div class="circle">
+                                                <div class="column"></div>
+                                            </div>
+                                        </div>
+                                        <div class="detail">
+                                            <div class="circle">
+                                                <div class="column"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="detail_2">
+                                        <div class="detail">
+                                            <div class="circle">
+                                                <div class="column"></div>
+                                            </div>
+                                        </div>
+                                        <div class="detail">
+                                            <div class="circle">
+                                                <div class="column"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container_change_month">
+                                    <button id="last_month">&lt;</button>
+                                    <div>
+                                        <span id="text_month_02">Null</span>
+                                        <span id="text_year">0000</span>
+                                    </div>
+                                    <button id="next_month">&gt;</button>
+                                </div>
+                                <div class="container_weedays">
+                                    <span class="week_days_item">DOM</span>
+                                    <span class="week_days_item">LUN</span>
+                                    <span class="week_days_item">MAR</span>
+                                    <span class="week_days_item">MÍE</span>
+                                    <span class="week_days_item">JUE</span>
+                                    <span class="week_days_item">VIE</span>
+                                    <span class="week_days_item">SÁB</span>
+                                </div>
+                                <div class="container_days">
+                                    <span class="week_days_item item_day"></span>          
+                                </div>
+                            </div>
+                        </div> 
+                </div>  
+            </div>
+        </div>
+        <div class=" cld_itm">
+            <h1 id="titulo_fecha">Seleccione una Fecha</h1>
+            <p id="selected_date">La fecha que ha escogido es: </p>
+            <input id ="calen_btn" type="button" value="Agendar Servicio" onclick="ProcessEnd()">
+        </div>
+        </div>
+                
+    <div class="copyright">
+        <small>Terminos de uso, Privacidad y Cookies, Ayuda</small>
+    </div>
+
+</body>
+</html>
